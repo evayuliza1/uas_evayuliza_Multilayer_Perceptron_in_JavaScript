@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="author" content="Jason Mayes" />
+    <title>UAS Kecerdasan Buatan</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Hello fellow coder! Website designed and coded by Jason Mayes 2017 -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Multilayer Perceptron dengan JavaScript</h1>
+    <p>Eva Yuliza</p>
+    <div class="box">
+      <h2>Input Image</h2>
+      <p>Gambar yang di input adalah Gambar Dengan Warna Abu abu dan Ukuran 28x28 piksel dari kumpulan data MNIST
+</p>
+      <canvas id="mnist" width="28" height="28"></canvas>
+    </div>
+    <div class="box">
+      <h2>Prediction</h2>
+      <p>Di Bawah Ini Adalah Prediksi Angka Yang Ada Pada Gambar Disamping</p>
+      <p id="result">Processing...</p>
+    </div>
+    <div class="blocky">
+      <p id="domSpeed">Ubah interval antar klasifikasi! Saat ini 1000ms</p>
+      <input type="range" min="10" max="5000" value="1000" class="slider" id="ranger">
+    </div>
+    <p id="json"></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
+    <script type="text/javascript" src="https://storage.googleapis.com/jmstore/mnist.js"></script>
+    <script type="text/javascript" src="js/engine.js"></script>
+  </body>
+</html>
